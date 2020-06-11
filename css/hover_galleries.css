@@ -1,0 +1,50 @@
+.hover-gallery-1,
+.hover-gallery-2 {
+    min-height: 15rem;
+    display: flex;
+}
+.hover-gallery-1 > *,
+.hover-gallery-2 > * {
+    width: 25%;
+    padding: 1rem;
+}
+
+.hover-gallery-1 .hover-div,
+.hover-gallery-2 .hover-div {
+    width: 100%;
+    height: 100%;
+    /* padding: ; */
+    transition: all .4s ease-in-out;
+}
+.hover-gallery-1 .hover-div:hover,
+.hover-gallery-2 .hover-div:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+/* .hover-gallery-1 */
+.hover-gallery-1 > div:nth-child(1) {
+    background: url("https://images.unsplash.com/photo-1561831807-31cd5a0b78fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80") no-repeat center center/cover;
+} 
+.hover-gallery-1 > div:nth-child(2) {
+    background: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+.hover-gallery-1 > div:nth-child(3) {
+    background: url("https://images.unsplash.com/photo-1516409590654-e8d51fc2d25c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+.hover-gallery-1 > div:nth-child(4) {
+    background: url("https://images.unsplash.com/photo-1519457098796-ce557f94e179?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+/* .hover-gallery-2 */
+.hover-gallery-2 > div:nth-child(1) {
+    background: url("https://images.unsplash.com/photo-1528141603775-81fd11f61682?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover;
+} 
+.hover-gallery-2 > div:nth-child(2) {
+    background: url("https://images.unsplash.com/photo-1560560011-ea70ae062668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+.hover-gallery-2 > div:nth-child(3) {
+    background: url("https://images.unsplash.com/photo-1516535928439-27a66ff7a92a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+.hover-gallery-2 > div:nth-child(4) {
+    background: url("https://images.unsplash.com/photo-1542729004-283f67134c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
