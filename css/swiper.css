@@ -35,7 +35,7 @@ https://github.com/nolimits4web/Swiper/blob/master/demos/110-slides-per-view.htm
     /* width: 280px;  */
 }
 
-.swiper-slide:nth-child(1) {
+/* .swiper-slide:nth-child(1) {
     background: url("https://images.unsplash.com/photo-1561831807-31cd5a0b78fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80") no-repeat center center/cover;
 }
 .swiper-slide:nth-child(2) {
@@ -58,7 +58,7 @@ https://github.com/nolimits4web/Swiper/blob/master/demos/110-slides-per-view.htm
 }
 .swiper-slide:nth-child(8) {
     background: url("https://images.unsplash.com/photo-1542729004-283f67134c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
-}
+} */
 
 
 .swiper-2 {
