@@ -43,6 +43,7 @@
   
   .circle-chart__background {
     stroke: #efefef;
+    stroke: transparent;
     stroke-width: 1;
     fill: none; 
   }
@@ -56,7 +57,7 @@
   .circle-chart__percent {
     alignment-baseline: central;
     text-anchor: middle;
-    font-size: 8px;
+    font-size: 4px;
   }
   
   .circle-chart__subline {
@@ -67,6 +68,7 @@
   
   .success-stroke {
     stroke: #00C851;
+    stroke: #fff;
   }
   
   .warning-stroke {

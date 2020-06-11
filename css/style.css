@@ -258,6 +258,8 @@ a {
 /* progresscircle */
 .progresscircle {
     padding: 3rem 0 2rem 0;
+    background: url("https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80") no-repeat center center/cover;
+    color: white;
 }
 
 .progresscircle .wrapper {
@@ -267,6 +269,7 @@ a {
 }
 .progresscircle .heading {
     margin-bottom: 2rem;
+    color: white;
 }
 .progresscircle .circlechart {
     margin-bottom: 1rem;
@@ -277,6 +280,17 @@ a {
 }
 .progresscircle .circlechart:last-of-type {
     margin-right: .5rem;
+}
+.circle-chart__percent {
+    fill: white;
+    transform: translateY(5.5%);
+    font-family: sans-serif;
+}
+.circle-chart__subline {
+    display: none;
+}
+.skill-name {
+    text-transform: capitalize;
 }
 
 
@@ -494,3 +508,4 @@ a {
 .copyright {
     padding: 1.5rem 0;
 }
+
