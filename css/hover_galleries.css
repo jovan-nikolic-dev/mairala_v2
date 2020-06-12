@@ -7,7 +7,7 @@
 .hover-gallery-1 > *,
 .hover-gallery-2 > * {
     width: 25%;
-    padding: 16px;
+    padding: 12px;
 }
 
 .hover-gallery-1 .hover-div,
@@ -40,8 +40,16 @@
     transition: transform 1.5s cubic-bezier(0.2, 1, 0.3, 1);
     background-color: rgba(0, 0, 0, 1);
 }
-.hover-gallery-1 .hover-div:hover:after,
+/* .hover-gallery-1 .hover-div:hover:after,
 .hover-gallery-2 .hover-div:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-40deg);
+} */
+
+.img-div {
+    position: relative;
+}
+.hover-gallery-1 .img-div:hover .hover-div:after,
+.hover-gallery-2 .img-div:hover .hover-div:after {
     transform: scale(2) translateX(0) translateY(0) rotate(-40deg);
 }
 
