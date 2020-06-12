@@ -16,10 +16,33 @@
     height: 100%;
     border-radius: 5px;
     transition: all .4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
 }
-.hover-gallery-1 .hover-div:hover,
+/* .hover-gallery-1 .hover-div:hover,
 .hover-gallery-2 .hover-div:hover {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .5);
+} */
+
+.hover-gallery-1 .hover-div:after,
+.hover-gallery-2 .hover-div:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: inherit;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-40deg);
+    transition: transform 1.5s cubic-bezier(0.2, 1, 0.3, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+.hover-gallery-1 .hover-div:hover:after,
+.hover-gallery-2 .hover-div:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-40deg);
 }
 
 
