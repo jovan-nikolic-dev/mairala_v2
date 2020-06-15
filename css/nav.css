@@ -10,7 +10,7 @@
 	transition: all .3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body {
 		overflow-x: hidden;
     }
@@ -22,7 +22,8 @@
 		align-items: start;
 		background-color: transparent;
 		/* width: 50%; */
-		width: 320px;
+        /* width: 320px; */
+        width: 100%;
 		transform: translateX(100%);
 		transition: transform .5s ease-in;
     }

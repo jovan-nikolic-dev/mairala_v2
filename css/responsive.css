@@ -1,5 +1,93 @@
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     .progresscircle .container {
         max-width: 100%;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .progresscircle .skill-wrapper {
+        padding-left: 75px;
+        width: 33%;
+        margin-bottom: 40px;
+    }
+    .footer-info .wrapper > * {
+        width: 50%;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    #team .member-box {
+        width: 50%;
+    }
+    .member-box:last-child {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .heading-primary {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    #about .wrapper .content-image {
+        position: relative;
+    }
+    #about .wrapper .content-wrapper,
+    #about .wrapper .text-box-secondary, 
+    #about .wrapper .content-image {
+        width: 100%;
+    }
+    #about .wrapper .content-wrapper {
+        margin-bottom: 32px;
+    }
+    #about .wrapper {
+        padding-bottom: 0;
+    }
+
+    .services-wrapper .text-box-small {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+    .services-wrapper .text-box-small:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+
+    .progresscircle .skill-wrapper {
+        /* padding-left: 75px; */
+        width: 50%;
+        /* margin-bottom: 40px; */
+    }
+
+
+    .hover-gallery-1, .hover-gallery-2 {
+        min-height: 240px;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 30rem;
+    }
+    .img-div {
+        width: 50%;
+    }
+
+
+    
+
+}
+
+@media(max-width:575px) {
+    #team .member-box {
+        width: 100%;
+    }
+    .member-box:not(:first-child) {
+        margin-top: 50px;
+    }
+    .footer-info .wrapper > * {
+        width: 100%;
+        margin-bottom: 16px;
     }
 }
