@@ -15,8 +15,12 @@
     <!-- progresscircle -->
     <link rel="stylesheet" href="css/progresscircle/progresscircle.css">
     <link rel="stylesheet" href="css/progresscircle/progresscircle_style.css">
+    <!-- nav CSS -->
+    <link rel="stylesheet" href="css/nav.css">
     <!-- main CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- responsive Breakpoints -->
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,14 +29,21 @@
             <nav id="main-nav">
                 <div class="container">
                     <h2 id="nav-logo" class="logo">Mairala</h2>
+
                     <ul class="nav-links">
-                        <li><a href="#home" class="nav-link">home</a></li>
-                        <li><a href="#about" class="nav-link">about</a></li>
-                        <li><a href="#portfolios" class="nav-link">portfolios</a></li>
-                        <li><a href="#team" class="nav-link">team</a></li>
-                        <li><a href="#blog" class="nav-link">blog</a></li>
-                        <li><a href="#connect" class="nav-link">connect</a></li>
+                        <li class="nav-link-li"><a href="#showcase" class="nav-link">home</a></li>
+                        <li class="nav-link-li"><a href="#about" class="nav-link">about</a></li>
+                        <li class="nav-link-li"><a href="#portfolios" class="nav-link">portfolios</a></li>
+                        <li class="nav-link-li"><a href="#team" class="nav-link">team</a></li>
+                        <li class="nav-link-li"><a href="#blog" class="nav-link">blog</a></li>
+                        <li class="nav-link-li"><a href="#connect" class="nav-link">connect</a></li>
                     </ul>
+
+                    <div class="burger">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
                 </div>
             </nav>
 
@@ -109,6 +120,8 @@
                     <h3 class="heading section-heading section-heading-small text-center">our skills</h3>
     
                     <div class="wrapper">
+
+                        
                         <div class="skill-wrapper">
                             <div class="circlechart" 
                                 data-percentage="90">
@@ -248,14 +261,34 @@
                     </div>
                 </div>
                 <div class="member-box">
-                    <div class="member-image"></div>
+                    <div class="member-image">
+                        <div class="member-image-overlay">
+                            <div class="member-social">
+                                <div class="member-social-link">
+                                    <a href="https://www.twitter.com/" target="_blank"><img src="img/links/tw.png" alt="twitter"></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><img src="img/links/fb.png" alt="twitter"></a>
+                                    <a href="https://www.linkedin.com/" target="_blank"><img src="img/links/in.png" alt="twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="member-text">
                         <h4 class="heading section-heading section-heading-small text-center text-bold member-name">mitchell anderson</h4>
                         <p class="text-center member-title text-bold">creative director</p>
                     </div>
                 </div>
                 <div class="member-box">
-                    <div class="member-image"></div>
+                    <div class="member-image">
+                        <div class="member-image-overlay">
+                            <div class="member-social">
+                                <div class="member-social-link">
+                                    <a href="https://www.twitter.com/" target="_blank"><img src="img/links/tw.png" alt="twitter"></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><img src="img/links/fb.png" alt="twitter"></a>
+                                    <a href="https://www.linkedin.com/" target="_blank"><img src="img/links/in.png" alt="twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="member-text">
                         <h4 class="heading section-heading section-heading-small text-center text-bold member-name">mitchell anderson</h4>
                         <p class="text-center member-title text-bold">creative director</p>
@@ -439,6 +472,9 @@
 
     <!-- progresscircle JS -->
     <script src="js/progresscircle.js"></script>
+
+    <!-- nav JS -->
+    <script src="js/nav.js"></script>
 
 
     <!-- Swiper CDN -->
