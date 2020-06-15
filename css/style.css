@@ -213,12 +213,13 @@ a {
 #main-nav {
     
     background-color: transparent;
-    padding: .5rem 0;
+    /* padding: .5rem 0; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 5;
+    height: 64px;
 }
 #main-nav::before {
     content: "";
@@ -230,13 +231,16 @@ a {
     z-index: -1;
     background-color: var(--clr-grey);
     opacity: .85;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 #main-nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 48px;
+    height: 100%;
 }
 #main-nav .nav-links {
     display: flex;

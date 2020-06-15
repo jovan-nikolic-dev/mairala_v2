@@ -80,6 +80,10 @@
 }
 
 @media(max-width:575px) {
+    .heading-primary {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
     #team .member-box {
         width: 100%;
     }
@@ -89,5 +93,18 @@
     .footer-info .wrapper > * {
         width: 100%;
         margin-bottom: 16px;
+    }
+}
+
+
+
+
+
+/* LANDSCAPE */
+
+@media(max-height: 500px) {
+    .heading-primary {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 }
