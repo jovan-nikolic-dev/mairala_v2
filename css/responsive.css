@@ -94,6 +94,9 @@
         width: 100%;
         margin-bottom: 16px;
     }
+    .contact-input {
+        flex-direction: column;
+    }
 }
 
 
