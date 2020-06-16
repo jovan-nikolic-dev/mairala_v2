@@ -1,0 +1,116 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow+Semi+Condensed&display=swap');
+.section-duke-energy {
+    margin-bottom: 40px;
+}
+
+.duke-container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1440px;
+    width: 100% !important;
+}
+.duke-wrapper {
+    display: flex;
+    color: #005984;
+    position: relative;
+}
+.duke-center-line {
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    height: 200px;
+    height: calc(100% - 40px);
+    width: 1px;
+    background-color: #005984;
+    /* border: 1px solid black; */
+}
+.commitments {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.commitments-1 {
+    padding-right: 30px;
+}
+.commitments-2 {
+    padding-left: 30px;
+}
+
+.commitments-heading {
+    padding-bottom: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.items-wrapper {
+    display: flex;
+    margin-left: -40px;
+    padding: 0 20px;
+}
+.items-wrapper .item {
+    padding-left: 40px;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.item-img {
+    width: 90px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.item-img img {
+    height:100%;
+    width: 100%;
+}
+.item-text {
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-text p {
+    font-size: 85%;
+    width: 80%;
+}
+
+@media (max-width: 1024px) {
+    .duke-wrapper {
+        flex-direction: column;
+    }
+    .duke-center-line {
+        display: none;
+    }
+    .commitments {
+        width: 100%;
+    }
+    .commitments-1 {
+        padding-right: 0px;
+    }
+    .commitments-2 {
+        padding-left: 0px;
+    }
+    .commitments:not(:nth-last-child(2)) {
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media(max-width:575px) {
+    .items-wrapper {
+        flex-direction: column;
+    }
+    .items-wrapper .item {
+        width: 100%;
+    }
+    .items-wrapper .item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

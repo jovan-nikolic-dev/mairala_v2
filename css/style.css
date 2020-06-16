@@ -651,11 +651,13 @@ a {
 
 .item-grid {
     position: relative;
+    padding-bottom: 140px;
 }
 :root {
     --width: 3px;
     --half-width: calc(var(--width) / 2);
     --radius: 5px;
+    --btn-radius: 35px;
 }
 .timeline {
     width: var(--width);
@@ -668,6 +670,21 @@ a {
     border-radius: var(--half-width);
     opacity: .5;
 }
+
+.timeline-btn {
+    position: absolute;
+    left: calc(50% - var(--btn-radius));
+    bottom: 0px;
+    height: calc(2 * var(--btn-radius));
+    width: calc(2 * var(--btn-radius));
+    background-color: lightblue;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: orangered;
+    border-style: solid;
+
+}
+
 .item-grid .date {
     position: relative;
 }
