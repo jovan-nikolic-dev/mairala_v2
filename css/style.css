@@ -10,8 +10,9 @@
     --clr-link: #28bbe5;
     --clr-footer-bg: #222222;
     --clr-footer-text: #c2c2c2;
-    --cle-footer-dark-bg: #1c1c1c;
-    --cle-footer-dark-text: #595959;
+    --clr-footer-dark-bg: #1c1c1c;
+    --clr-footer-dark-text: #595959;
+    --clr-timeline: #ebebeb;
 }
 html {
     scroll-behavior: smooth;
@@ -669,7 +670,8 @@ a {
     left: calc(50% - var(--half-width));
     top: 0px;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
+    background-color: var(--clr-timeline);
     
     border-radius: var(--half-width);
     opacity: .5;
@@ -684,7 +686,8 @@ a {
     background-color: lightblue;
     border-radius: 50%;
     border-width: 3px;
-    border-color: orangered;
+    /* border-color: orangered; */
+    border-color: var(--clr-timeline);
     border-style: solid;
     display: flex;
     align-items: center;
@@ -695,6 +698,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: yellowgreen;
+    background-color: var(--clr-grey-brown);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -713,7 +717,8 @@ a {
     width: 0px;
     border-width: var(--radius);
     border-style: solid;
-    border-color: black;
+    /* border-color: black; */
+    border-color: var(--clr-timeline);
     border-radius: 50%;
 }
 .item-grid .item-row:nth-child(even) .date:before {
@@ -795,8 +800,8 @@ a {
 }
 
 .footer-copyright {
-    color: var(--cle-footer-dark-text);
-    background-color: var(--cle-footer-dark-bg);
+    color: var(--clr-footer-dark-text);
+    background-color: var(--clr-footer-dark-bg);
 }
 .copyright {
     padding: 1.5rem 0;
