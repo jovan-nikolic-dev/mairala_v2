@@ -889,7 +889,27 @@ a {
         width: 50%;
     }
 
+/*     TIMELINE */
 
+.timeline {
+    left: calc(50% - var(--half-width));
+    left: 30px;
+}
+.item-row:nth-child(odd),
+.item-row:nth-child(even){
+    flex-direction: column;
+    margin-left: 0
+}
+#blog .item-row .item-row-img div {
+    float: left;
+}
+.item-row:nth-child(even) .item-row-text > *{
+    text-align: left;
+}
+.item-row .item-row-text,
+.item-row .item-row-img {
+    width: 100%
+}
 }
 
 @media(max-width:575px) {

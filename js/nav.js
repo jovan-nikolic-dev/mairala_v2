@@ -27,5 +27,3 @@ const navSlide = () => {
 
 navSlide();
 
-let windowWidth = window.innerWidth;
-console.log(windowWidth);
