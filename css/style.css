@@ -73,6 +73,7 @@ html {
     /* max-width: 1030px; */
     max-width: 1210px;
     margin: auto;
+    /* padding: 0 16px; */
 }
 
 
@@ -602,6 +603,7 @@ a {
     background-color: white;
 }
 
+/* blog */
 
 #blog .wrapper {
     display: flex;
@@ -621,6 +623,7 @@ a {
 .item-row:nth-child(even) .item-row-text > * {
     text-align: right;
 }
+
 .item-row .item-row-img,
 .item-row .item-row-text {
     padding-left: 80px;
@@ -643,6 +646,48 @@ a {
     float: right;
     background: url("https://images.unsplash.com/photo-1544364827-5f9f67a0f286?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
 }
+
+/* timeline */
+
+.item-grid {
+    position: relative;
+}
+:root {
+    --width: 3px;
+    --half-width: calc(var(--width) / 2);
+    --radius: 5px;
+}
+.timeline {
+    width: var(--width);
+    position: absolute;
+    left: calc(50% - var(--half-width));
+    top: 0px;
+    height: 100%;
+    background-color: red;
+    
+    border-radius: var(--half-width);
+    opacity: .5;
+}
+.item-grid .date {
+    position: relative;
+}
+
+.item-grid .date:before {
+    content: "";
+    position: absolute;
+    left: calc(-40px - var(--radius));
+    height: 0px;
+    width: 0px;
+    border-width: var(--radius);
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+}
+.item-grid .item-row:nth-child(even) .date:before {
+    left: calc(100% + 40px - var(--radius));
+}
+
+
 
 #contact {
     padding: 3.5rem 0;
