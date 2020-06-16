@@ -682,7 +682,19 @@ a {
     border-width: 3px;
     border-color: orangered;
     border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.timeline-btn a {
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-grid .date {
