@@ -603,42 +603,11 @@ a {
 #contact {
     padding: 3.5rem 0;
 }
-#contact .wrapper {
-    display: grid;
-}
-#contact h2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: center;
-}
-#contact input[type="text"] {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-#contact input[type="email"] {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-#contact textarea {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-#contact .button-container {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    justify-self: center;
-}
 
+#contact .wrapper {
+    display: flex;
+    flex-direction: column;
+}
 #contact h2 {
     margin-bottom: 3.5rem;
 }
@@ -650,20 +619,28 @@ a {
     border-right: none;
     margin-bottom: 1rem;
 }
-#contact input[type="text"],
-#contact input[type="email"] {
+.contact-input {
+    display: flex;
+    margin-left: -10px;
+}
+.contact-input .input {
+    width: 100%;
+    padding-left: 10px;
+}
+.contact-input .input input {
+    width: 100%;
     border-bottom: none;
 }
 #contact textarea {
     resize: none;
     height: 10rem;
 }
-#contact input[type="text"] {
-    margin-right: .5rem;
+#contact .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#contact input[type="email"] {
-    margin-left: .5rem;
-}
+
 
 
 #main-footer .footer-info {
