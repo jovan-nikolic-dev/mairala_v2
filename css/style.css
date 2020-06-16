@@ -647,6 +647,10 @@ a {
     background: url("https://images.unsplash.com/photo-1544364827-5f9f67a0f286?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
 }
 
+#blog .item-row:nth-child(even) .item-row-img div {
+    float: left;
+}
+
 /* timeline */
 
 .item-grid {
