@@ -910,41 +910,49 @@ a {
 
     /*  TIMELINE  */
 
-        
+        /* timeline items */
 
-    .item-row:nth-child(odd),
-    .item-row:nth-child(even){
-        flex-direction: column;
-        margin-left: 0
-    }
-    #blog .item-row .item-row-img  {
-        margin-bottom: 20px;
-    }
-    #blog .item-row .item-row-img div {
-        float: left;
-    }
-    .item-row:nth-child(even) .item-row-text > *{
-        text-align: left;
-    }
-    .item-row .item-row-text,
-    .item-row .item-row-img {
-        width: 100%
-    }
-    
-    .item-row .item-row-text {
-        padding-right: 40px;
-    }
+            .item-row:nth-child(odd),
+            .item-row:nth-child(even){
+                flex-direction: column;
+                margin-left: 0
+            }
+            #blog .item-row .item-row-img  {
+                margin-bottom: 20px;
+            }
+            #blog .item-row .item-row-img div {
+                float: left;
+            }
+            .item-row:nth-child(even) .item-row-text > *{
+                text-align: left;
+            }
+            .item-row .item-row-text,
+            .item-row .item-row-img {
+                width: 100%
+            }
+            
+            .item-row .item-row-text {
+                padding-right: 40px;
+            }
 
-    
+            
+        /* timeline line, points, button */
+
+            /* line */
             .timeline {
                 left: calc(50% - var(--half-width));
                 left: var(--left-offset);
             }
+
+            /* points */
+            .item-grid .item-row:nth-child(odd) .date::before,
+            .item-grid .item-row:nth-child(even) .date::before {
+                left: calc(var(--left-offset) - var(--item-row-text-pl) - var(--width));
+            }
+
+            /* button */
             .timeline-btn {
                 left: calc(var(--left-offset) - var(--btn-radius) + var(--half-width));
-            }
-            .item-grid .date::before {
-                left: calc(var(--left-offset) - var(--item-row-text-pl) - var(--width));
             }
 }
 
