@@ -16,10 +16,10 @@
     --clr-timeline: #ebebeb;
 
     /* timeline left offset on mobile */
-    --left-offset: 50px;
+    --left-offset: 10px;
 
     /* for adjusting timeline bulletpoint on mobile */
-    --item-row-text-pl: 80px;
+    --item-row-text-pl: 30px;
 
     /* timeline line width */
     --width: 3px;
@@ -92,11 +92,12 @@ html {
     padding: 0 1rem;
 }
 
-.container1030 {
+.container-blog {
     /* max-width: 1030px; */
     max-width: 1210px;
     margin: auto;
     /* padding: 0 16px; */
+    padding: 0 40px;
 }
 
 
@@ -908,6 +909,30 @@ a {
         width: 50%;
     }
 
+    .text-div {
+        /* position */
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        /* display */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        text-align: center;
+        color: #fff;
+        transform: translateY(-20%);
+        transition: opacity 0.5s cubic-bezier(0.2, 1, 0.3, 1),
+                    transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+        opacity: 0;
+
+    }
+    .text-div:hover {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
     /*  TIMELINE  */
 
         /* timeline items */
@@ -922,6 +947,7 @@ a {
             }
             #blog .item-row .item-row-img div {
                 float: left;
+                width: 100%;
             }
             .item-row:nth-child(even) .item-row-text > *{
                 text-align: left;
@@ -931,11 +957,11 @@ a {
                 width: 100%
             }
             
-            .item-row .item-row-text {
+            /* .item-row .item-row-text {
                 padding-right: 40px;
-            }
+            } */
 
-            
+
         /* timeline line, points, button */
 
             /* line */
