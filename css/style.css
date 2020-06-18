@@ -301,6 +301,9 @@ a {
 }
 
 
+/* ___________________________________________________________ */
+
+
 /* about */
 
 #about .container.subsection-1 {
@@ -308,10 +311,10 @@ a {
     justify-content: center;
 }
 
-#about .wrapper .text-box-secondary {
+#about .about-wrapper .text-box-secondary {
     width: 50%;
 }
-#about .wrapper {
+#about .about-wrapper {
     padding: 3.25rem 0;
     position: relative;
     background-color: var(--clr-light-grey);
@@ -337,6 +340,7 @@ a {
     height: 0;
     border-style: solid;
     border-width: 413px 0 0 215px;
+    /* border width handled by height_fix.js */
     border-color: transparent transparent transparent var(--clr-light-grey);
 }
 @media (max-width: 1199px) {
@@ -350,7 +354,65 @@ a {
     }
 }
 
+/* ___________________________________________________________ */
 
+/* ABOUT NEW */
+.about-section {
+    position: relative;
+    /* for positioning .img-div */
+}
+/* .about-section .container {
+    border: 1px solid black;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+} */
+
+/* text */
+
+.about-section .text-content {
+    width: 50%;
+}
+.about-section .section-wrapper {
+    /* background-color: lightgreen; */
+    background-color: var(--clr-light-grey);
+
+    padding: 3.25rem 0;
+}
+/* image */
+.about-section .img-div {
+    /* border: 2px solid maroon; */
+    /* background-color: rgba(128, 0, 0, 1); */
+    background-image: url("https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+}
+.about-section .cover-wrapper {
+    /* border: 2px solid orange; */
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+}
+.about-section .cover {
+    /* border: 2px solid navy; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 1000%;
+    transform-origin: top left;
+    transform: rotate(70deg);
+    /* background-color: lightgreen; */
+    background-color: var(--clr-light-grey);
+
+}
 
 
 
