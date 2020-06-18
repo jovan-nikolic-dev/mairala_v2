@@ -20,10 +20,7 @@
     overflow: hidden;
     position: relative;
 }
-/* .hover-gallery-1 .hover-div:hover,
-.hover-gallery-2 .hover-div:hover {
-    background-color: rgba(0, 0, 0, .5);
-} */
+
 
 .hover-gallery-1 .hover-div:after,
 .hover-gallery-2 .hover-div:after {
@@ -40,10 +37,6 @@
     transition: transform 1.5s cubic-bezier(0.2, 1, 0.6, 1);
     background-color: rgba(0, 0, 0, 1);
 }
-/* .hover-gallery-1 .hover-div:hover:after,
-.hover-gallery-2 .hover-div:hover:after {
-    transform: scale(2) translateX(0) translateY(0) rotate(-40deg);
-} */
 
 .img-div {
     position: relative;
